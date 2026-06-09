@@ -75,10 +75,9 @@ npm start
 ### Environment Variables
 
 ```env
-PORT=3000
-DATABASE_URL=your_postgresql_connection_string
-JWT_SECRET=your_jwt_secret_key
-NODE_ENV=development
+PORT=5000
+CONNECTING_STRING=postgresql://neondb_owner:npg_UIAowF0glGO8@ep-polished-forest-aqfuuy8x-pooler.c-8.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+AccessTokeSecret_JWT=feybyltynhgvbtm;biujmuyntbyvgybgvvuhtm
 ```
 
 ---
