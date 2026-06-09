@@ -50,9 +50,14 @@ const auth = (...roles: TRoles[]) => {
                 });
             }
 
-            req.user = decoded;
-            
-                next();
+            req.user = {
+                id: user.id,
+                name: user.name,
+                email: user.email,
+                role: user.role,
+            };
+
+            next();
         } catch (error) {
             return sendResponse(res, {
                 statusCode: 401,
