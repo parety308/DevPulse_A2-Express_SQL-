@@ -1,6 +1,11 @@
 import { Pool } from "pg";
 import { config } from "../config";
 
+console.log(
+  "CONNECTING_STRING exists:",
+  !!process.env.CONNECTING_STRING
+);
+
 export const pool = new Pool({
   connectionString: config.connectingString
 });

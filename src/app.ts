@@ -6,9 +6,15 @@ const app: Application = express();
 
 // Enable URL-encoded form data parsing
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({
-    origin: "http://localhost:5000"
-}));
+app.use(
+    cors({
+        origin: [
+            "http://localhost:5000",
+            "https://dev-pulse-sigma-one.vercel.app",
+        ],
+        credentials: true,
+    })
+);
 app.use(express.json());
 app.use('/api/auth', userRouter);
 app.use('/api/issues', issuRouter);
