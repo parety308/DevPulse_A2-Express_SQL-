@@ -8,8 +8,8 @@
 
 | Resource | URL |
 |----------|-----|
-| GitHub Repo | `[https://github.com/yourusername/devpulse](https://github.com/parety308/DevPulse_A2-Express_SQL-)` |
-| Live API | `[https://devpulse-api.vercel.app](https://dev-pulse-sigma-one.vercel.app/)` |
+| GitHub Repo | `https://github.com/parety308/DevPulse_A2-Express_SQL-` |
+| Live API | `https://dev-pulse-sigma-one.vercel.app` |
 | Interview Video | `https://drive.google.com/...` |
 
 ---
