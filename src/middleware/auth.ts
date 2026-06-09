@@ -6,11 +6,7 @@ import { pool } from "../db";
 import type { TRoles } from "../types";
 
 const auth = (...roles: TRoles[]) => {
-    return async (
-        req: Request,
-        res: Response,
-        next: NextFunction
-    ) => {
+    return async (req: Request,res: Response,next: NextFunction) => {
         try {
             const token = req.headers.authorization;
 
