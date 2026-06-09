@@ -5,7 +5,7 @@ const SignUpUser = async (req: Request, res: Response) => {
     const result = await userService.SignUpUserIntoDB(req.body);
     const user = result.rows[0];
     delete user.password;
-    res.status(200).json({
+    res.status(201).json({
         success: true,
         message: "User registered successfully",
         data: user
