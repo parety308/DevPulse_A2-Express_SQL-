@@ -5,7 +5,6 @@ import { issuRouter } from "./modules/issue/issu.route";
 const app: Application = express();
 
 // Enable URL-encoded form data parsing
-app.use(express.urlencoded({ extended: true }));
 app.use(
     cors({
         origin: [
@@ -16,6 +15,7 @@ app.use(
     })
 );
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', userRouter);
 app.use('/api/issues', issuRouter);
 try {

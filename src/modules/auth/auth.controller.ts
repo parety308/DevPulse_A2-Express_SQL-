@@ -21,6 +21,7 @@ const SignUpUser = async (req: Request, res: Response) => {
 
 const loginUser = async (req: Request, res: Response) => {
     try {
+         
         const result = await userService.loginUserIntoDB(req.body);
 
         res.status(200).json({
